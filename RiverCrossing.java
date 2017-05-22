@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
 
+//implement ActionListener to listen for button clicks
 public class RiverCrossing implements ActionListener {
     JButton[][] button = new JButton[9][13];
     ImageIcon water  = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/water1.jpg");
@@ -14,8 +15,8 @@ public class RiverCrossing implements ActionListener {
 	ImageIcon plank2  = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/plank2.jpg"); 
 	ImageIcon stump1  = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/stump1.jpg"); 
 	
+	// making a new frame
     JFrame mainFrame = new JFrame();
-    JPanel UIPanel = new JPanel();
     JPanel gamePanel = new JPanel();
 	
 
@@ -28,7 +29,8 @@ public class RiverCrossing implements ActionListener {
                 gamePanel.add(button[x][i]);
             }
         }
-
+        
+		//putting the bank in the top and bottom
         for(int x =0; x<1; x++) {
             for (int i = 0; i < 9; i++) {
                 button[x][i].setIcon(bank2);
@@ -41,7 +43,7 @@ public class RiverCrossing implements ActionListener {
             }
         }
 
-        //GETS RID OF LINESZZZZ
+        //Getting rid of the lines between the squares 
         for(int x =0; x<9; x++) {
             for (int i = 0; i < 13; i++) {
                 button[x][i].setBorderPainted(false);
@@ -49,6 +51,7 @@ public class RiverCrossing implements ActionListener {
             }
         }
 		
+		//Puting the stumps, plank and stump man in the determined positions
 		button[8][6].setIcon(stump1_man);
 		button[4][4].setIcon(stump1);
 	    button[5][9].setIcon(stump1);
@@ -60,12 +63,10 @@ public class RiverCrossing implements ActionListener {
 		button[7][1].setIcon(plank2);
 		button[7][10].setIcon(plank2);
 		
-        mainFrame.add(UIPanel);
         mainFrame.setSize(310,350);
         mainFrame.add(gamePanel);
         mainFrame.setVisible(true);
     }
-    @Override
     public void actionPerformed(ActionEvent e) {
 
     }
