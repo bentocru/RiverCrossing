@@ -4,26 +4,28 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
 
-//implement ActionListener to listen for button clicks
+//implement ActionListener to listen for button clicks and simplify names
 public class RiverCrossing implements ActionListener {
-    JButton[][] button = new JButton[9][13];
-    ImageIcon water  = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/water1.jpg");
-    ImageIcon bank1  = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/bank1.jpg");
-    ImageIcon bank2  = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/bank2.jpg");
-	ImageIcon stump1_man  = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/stump1_man.jpg"); 
-	ImageIcon stump3  = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/stump3.jpg"); 
-	ImageIcon plank2  = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/plank2.jpg"); 
-	ImageIcon stump1  = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/stump1.jpg"); 
+    JButton[][] button     = new JButton[9][13];
+    ImageIcon water        = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/water1.jpg");
+    ImageIcon bank1        = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/bank1.jpg");
+    ImageIcon bank2        = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/bank2.jpg");
+	ImageIcon stump1_man   = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/stump1_man.jpg"); 
+	ImageIcon stump3       = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/stump3.jpg"); 
+	ImageIcon plank2       = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/plank2.jpg"); 
+	ImageIcon stump1       = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/stump1.jpg"); 
 	
 	// making a new frame
     JFrame mainFrame = new JFrame();
     JPanel gamePanel = new JPanel();
 	
-
+    //set layout of grid to 13x9 
     public void RiverCrossing() {
         gamePanel.setLayout(new GridLayout(13,9));
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        for(int x=0; x<9; x++){
+        //determins the row to a max of 9
+		for(int x=0; x<9; x++){
+			//determins the column to a max of 13
             for(int i= 0; i<13; i++){
                 button[x][i] = new JButton(water);
                 gamePanel.add(button[x][i]);
