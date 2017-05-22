@@ -24,10 +24,10 @@ public class RiverCrossing extends JFrame {
 		 
 	JButton button = new JButton();
 	try {
-		Image img = ImageIO.read(getClass().getResource("bank1"));
-		button.setIcon(new ImageIcon(img));
-	} 	catch (Exception ex) {
+		Image img = ImageIO.read(getClass().getResource("resources/bank1.jpg"));
+		button.setIcon(new ImageIcon(img));}
+		catch (Exception ex) {
 		System.out.println(ex);
-  }		 
+		}		 
 	}
 }
