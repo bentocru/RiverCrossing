@@ -9,8 +9,11 @@ public class RiverCrossing implements ActionListener {
     ImageIcon water  = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/water1.jpg");
     ImageIcon bank1  = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/bank1.jpg");
     ImageIcon bank2  = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/bank2.jpg");
-	ImageIcon stump2_man  = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/stump2_man.jpg");
-
+	ImageIcon stump1_man  = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/stump1_man.jpg"); 
+	ImageIcon stump3  = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/stump3.jpg"); 
+	ImageIcon plank2  = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/plank2.jpg"); 
+	ImageIcon stump1  = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/stump1.jpg"); 
+	
     JFrame mainFrame = new JFrame();
     JPanel UIPanel = new JPanel();
     JPanel gamePanel = new JPanel();
@@ -46,8 +49,17 @@ public class RiverCrossing implements ActionListener {
             }
         }
 		
-		button[8][6].setIcon(stump2_man);
-	
+		button[8][6].setIcon(stump1_man);
+		button[4][4].setIcon(stump1);
+	    button[5][9].setIcon(stump1);
+		button[0][6].setIcon(stump3);
+		button[4][8].setIcon(stump1);
+		button[3][3].setIcon(stump1);
+		button[5][0].setIcon(plank2);
+		button[6][5].setIcon(plank2);
+		button[7][1].setIcon(plank2);
+		button[7][10].setIcon(plank2);
+		
         mainFrame.add(UIPanel);
         mainFrame.setSize(310,350);
         mainFrame.add(gamePanel);
