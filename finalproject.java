@@ -20,14 +20,6 @@ public class RiverCrossing extends JFrame {
 		 for (int i = 0; i < 117; i++){
 			JButton button = new JButton(Integer.toString(i +1));
 			pane.add(button);
-		 }
-		 
-	JButton button = new JButton();
-	try {
-		Image img = ImageIO.read(getClass().getResource("bank1"));
-		button.setIcon(new ImageIcon(img));
-	} 	catch (Exception ex) {
-		System.out.println(ex);
-  }		 
+		 }	
 	}
 }
