@@ -6,14 +6,15 @@ import javax.swing.*;
 
 //implement ActionListener to listen for button clicks and simplify names
 public class RiverCrossing implements ActionListener {
-    JButton[][] button     = new JButton[9][13];
-    ImageIcon water        = new ImageIcon("H:/scc110/project/RiverCrossing/Graphics/water1.jpg");
-    ImageIcon bank1        = new ImageIcon("H:/scc110/project/RiverCrossing/Graphics/bank1.jpg");
-    ImageIcon bank2        = new ImageIcon("H:/scc110/project/RiverCrossing/Graphics/bank2.jpg");
-	ImageIcon stump1_man   = new ImageIcon("H:/scc110/project/RiverCrossing/Graphics/stump1_man.jpg"); 
-	ImageIcon stump3       = new ImageIcon("H:/scc110/project/RiverCrossing/Graphics/stump3.jpg"); 
-	ImageIcon plank2       = new ImageIcon("H:/scc110/project/RiverCrossing/Graphics/plank2.jpg"); 
-	ImageIcon stump1       = new ImageIcon("H:/scc110/project/RiverCrossing/Graphics/stump1.jpg"); 
+	
+    JButton[][] button     =  new JButton[9][13];
+    ImageIcon water        =  new ImageIcon("H:/scc110/project/RiverCrossing/Graphics/water1.jpg");
+    ImageIcon bank1        =  new ImageIcon("H:/scc110/project/RiverCrossing/Graphics/bank1.jpg");
+    ImageIcon bank2        =  new ImageIcon("H:/scc110/project/RiverCrossing/Graphics/bank2.jpg");
+	ImageIcon stump1_man   =  new ImageIcon("H:/scc110/project/RiverCrossing/Graphics/stump1_man.jpg"); 
+	ImageIcon stump3       =  new ImageIcon("H:/scc110/project/RiverCrossing/Graphics/stump3.jpg"); 
+	ImageIcon plank2       =  new ImageIcon("H:/scc110/project/RiverCrossing/Graphics/plank2.jpg"); 
+	ImageIcon stump1       =  new ImageIcon("H:/scc110/project/RiverCrossing/Graphics/stump1.jpg"); 
 	
 	// making a new frame
     JFrame mainFrame = new JFrame();
@@ -23,8 +24,10 @@ public class RiverCrossing implements ActionListener {
     public void RiverCrossing() {
         gamePanel.setLayout(new GridLayout(13,9));
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        //determins the row to a max of 9
+        
+		//determins the row to a max of 9
 		for(int x=0; x<9; x++){
+			
 			//determins the column to a max of 13
             for(int i= 0; i<13; i++){
                 button[x][i] = new JButton(water);
@@ -34,7 +37,8 @@ public class RiverCrossing implements ActionListener {
         
 		//putting the bank in the top and bottom
         for(int x =0; x<1; x++) {
-            for (int i = 0; i < 9; i++) {
+            
+			for (int i = 0; i < 9; i++) {
                 button[x][i].setIcon(bank2);
             }
         }
@@ -69,7 +73,7 @@ public class RiverCrossing implements ActionListener {
         mainFrame.add(gamePanel);
         mainFrame.setVisible(true);
     }
+	
     public void actionPerformed(ActionEvent e) {
-
     }
 }
