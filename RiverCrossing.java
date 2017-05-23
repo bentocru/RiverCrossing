@@ -7,13 +7,13 @@ import javax.swing.*;
 //implement ActionListener to listen for button clicks and simplify names
 public class RiverCrossing implements ActionListener {
     JButton[][] button     = new JButton[9][13];
-    ImageIcon water        = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/water1.jpg");
-    ImageIcon bank1        = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/bank1.jpg");
-    ImageIcon bank2        = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/bank2.jpg");
-	ImageIcon stump1_man   = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/stump1_man.jpg"); 
-	ImageIcon stump3       = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/stump3.jpg"); 
-	ImageIcon plank2       = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/plank2.jpg"); 
-	ImageIcon stump1       = new ImageIcon("C:/Users/bentocru/IdeaProjects/RiverCrossing/src/stump1.jpg"); 
+    ImageIcon water        = new ImageIcon("H:/scc110/project/RiverCrossing/Graphics/water1.jpg");
+    ImageIcon bank1        = new ImageIcon("H:/scc110/project/RiverCrossing/Graphics/bank1.jpg");
+    ImageIcon bank2        = new ImageIcon("H:/scc110/project/RiverCrossing/Graphics/bank2.jpg");
+	ImageIcon stump1_man   = new ImageIcon("H:/scc110/project/RiverCrossing/Graphics/stump1_man.jpg"); 
+	ImageIcon stump3       = new ImageIcon("H:/scc110/project/RiverCrossing/Graphics/stump3.jpg"); 
+	ImageIcon plank2       = new ImageIcon("H:/scc110/project/RiverCrossing/Graphics/plank2.jpg"); 
+	ImageIcon stump1       = new ImageIcon("H:/scc110/project/RiverCrossing/Graphics/stump1.jpg"); 
 	
 	// making a new frame
     JFrame mainFrame = new JFrame();
